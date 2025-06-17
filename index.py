@@ -27,7 +27,7 @@ quiz = [
 ]
 
 pontuacao = 0
-print("===== Quiz de Funções (Completo) =====\\n")
+print("===== Quiz de Funções (Completo) =====\n")
 
 for i, q in enumerate(quiz):
     print(f"Questão {i+1}:")
@@ -36,9 +36,9 @@ for i, q in enumerate(quiz):
         print(alt)
     resp = input("Sua resposta: ").strip().lower()
     if resp == q["correta"]:
-        print("✅ Correto!\\n")
+        print("✅ Correto!\n")
         pontuacao += 1
     else:
-        print(f"❌ Errado! A resposta certa era: {q['correta']}\\n")
+        print(f"❌ Errado! A resposta certa era: {q['correta']}\n")
 
 print(f"Sua pontuação final: {pontuacao} de {len(quiz)}")
