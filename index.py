@@ -39,7 +39,7 @@ def gerar_questao_exponencial():
         "correta": correta
     }
 
-# Gera quiz com 5 perguntas aleatórias
+# Gera quiz com 10 perguntas aleatórias
 geradores = [gerar_questao_logaritmo, gerar_questao_exponencial]
 quiz = [random.choice(geradores)() for _ in range(10)]
 
